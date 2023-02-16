@@ -29,4 +29,11 @@ public class Document {
         String rightPart = this.texte.substring(end);
         this.texte = leftPart + remplacement + rightPart;
     }
+
+    public void majuscules(int start, int end) {
+        String chaine = this.texte.substring(start, end).toUpperCase();
+        String chaineAvant = this.texte.substring(0, start);
+        String ChaineAprès = this.texte.substring(end);
+        this.texte = chaineAvant + chaine + ChaineAprès;
+    }
 }
