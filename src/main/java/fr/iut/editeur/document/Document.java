@@ -36,4 +36,10 @@ public class Document {
         String ChaineAprès = this.texte.substring(end);
         this.texte = chaineAvant + chaine + ChaineAprès;
     }
+
+    public void effacer(int start, int end){
+        String chaineAvant = this.texte.substring(0, start);
+        String ChaineAprès = this.texte.substring(end);
+        this.texte = chaineAvant + ChaineAprès;
+    }
 }
